@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.github.cgutman.openwtv.ServerSelectActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressText"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:layout_alignLeft="@+id/portText"
+        android:layout_alignStart="@+id/portText"
+        android:layout_alignRight="@+id/portText"
+        android:layout_alignEnd="@+id/portText"
+        android:hint="IP address"
+        android:inputType="textNoSuggestions" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/portText"
+        android:layout_below="@+id/addressText"
+        android:layout_marginTop="24dp"
+        android:hint="Port (default is 7799)"
+        android:layout_alignLeft="@+id/passwdText"
+        android:layout_alignStart="@+id/passwdText"
+        android:layout_alignRight="@+id/passwdText"
+        android:layout_alignEnd="@+id/passwdText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwdText"
+        android:hint="Password"
+        android:layout_below="@+id/portText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:id="@+id/connectButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
